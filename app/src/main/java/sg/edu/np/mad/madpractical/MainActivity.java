@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         else {
             followBtn.setText("Follow");
         }
-        user.setFollowed(!user.isFollowed());
+        user.followed = !user.followed;
     }
 
     public void initFollowBtnTxt(User user) {
         Button followBtn = findViewById(R.id.buttonFollow);
-        if (!user.isFollowed()){
+        if (!user.followed){
             followBtn.setText("Follow");
         }
         else {
